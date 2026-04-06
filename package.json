@@ -1,0 +1,11 @@
+{
+  "name": "curso-checkout",
+  "version": "1.0.0",
+  "description": "Formulário de checkout",
+  "scripts": {
+    "start": "serve -s . -l 3000"
+  },
+  "dependencies": {
+    "serve": "^14.2.0"
+  }
+}

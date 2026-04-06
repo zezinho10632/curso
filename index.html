@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Checkout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrapper">
+
+    <!-- BLOCO 1: DADOS DE ENTREGA -->
+    <div class="card">
+        <div class="card-titulo">Dados de Entrega</div>
+
+        <div class="linha">
+            <div class="campo metade">
+                <label for="titulo">Título</label>
+                <select id="titulo" name="titulo">
+                    <option value="sr">Sr.</option>
+                    <option value="sra">Sra.</option>
+                </select>
+            </div>
+            <div class="campo metade">
+                <label for="sobrenome">Sobrenome</label>
+                <input type="text" id="sobrenome" name="sobrenome" placeholder="">
+            </div>
+        </div>
+
+        <div class="linha">
+            <div class="campo">
+                <label for="endereco">Endereço</label>
+                <input type="text" id="endereco" name="endereco" placeholder="">
+            </div>
+        </div>
+
+        <div class="linha">
+            <div class="campo metade">
+                <label for="cidade">Cidade</label>
+                <input type="text" id="cidade" name="cidade" placeholder="">
+            </div>
+            <div class="campo metade">
+                <label for="cep">CEP</label>
+                <input type="text" id="cep" name="cep" placeholder="" maxlength="9">
+            </div>
+        </div>
+    </div>
+
+    <!-- BLOCO 2: INFORMAÇÕES DE PAGAMENTO -->
+    <div class="card">
+        <div class="card-titulo">Informações de Pagamento</div>
+
+        <div class="linha">
+            <div class="campo">
+                <div class="label-linha">
+                    <label for="nome-cartao">Nome no Cartão</label>
+                    <div class="bandeiras-topo">
+                        <span class="icone-visa" id="icone-visa">VISA</span>
+                        <span class="icone-mc" id="icone-mc">
+                                <span class="mc-esq"></span>
+                                <span class="mc-dir"></span>
+                            </span>
+                        <span class="icone-elo" id="icone-elo">ELO</span>
+                    </div>
+                </div>
+                <input type="text" id="nome-cartao" name="nome-cartao" placeholder="">
+            </div>
+        </div>
+
+        <div class="linha">
+            <div class="campo">
+                <label for="numero-cartao">Número do Cartão</label>
+                <div class="campo-numero">
+                    <input type="text" id="numero-cartao" name="numero-cartao" placeholder="0000 0000 0000 0000" maxlength="19">
+                    <span class="badge-ativo" id="badge-ativo"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="linha">
+            <div class="campo compacto">
+                <label for="validade">Validade</label>
+                <input type="text" id="validade" name="validade" placeholder="MM/AA" maxlength="5">
+            </div>
+            <div class="campo compacto">
+                <label for="codigo">Código de Segurança</label>
+                <input type="text" id="codigo" name="codigo" placeholder="CVV" maxlength="4">
+            </div>
+        </div>
+    </div>
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>
