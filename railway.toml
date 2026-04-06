@@ -1,8 +1,8 @@
-[node]
-  version = "20"
+[railway]
+  builder = "nixpacks"
 
 [build]
-  builder = "NPM"
+  builder = "nixpacks"
 
 [deploy]
   startCommand = "npx serve -s . -l 3000"
