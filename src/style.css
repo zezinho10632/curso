@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f0f2f5;
+    padding: 40px 20px;
+    min-height: 100vh;
+}
+
+.wrapper {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.card {
+    background: #ffffff;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+}
+
+.card-header {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    color: #1a1a1a;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+.linha {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 18px;
+}
+
+.linha:last-child {
+    margin-bottom: 0;
+}
+
+.campo {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.campo.metade {
+    flex: 1;
+}
+
+.campo.compacto {
+    flex: 0 0 140px;
+}
+
+.campo.compacto + .campo.compacto {
+    margin-left: 30px;
+}
+
+label {
+    font-size: 13px;
+    font-weight: 500;
+    color: #555;
+    margin-bottom: 8px;
+}
+
+input,
+select {
+    padding: 14px 16px;
+    border: 2px solid #e0e0e0;
+    border-radius: 15px;
+    font-size: 15px;
+    font-family: inherit;
+    outline: none;
+    transition: all 0.3s ease;
+    background: #fff;
+}
+
+input:focus,
+select:focus {
+    border-color: #4a90e2;
+}
